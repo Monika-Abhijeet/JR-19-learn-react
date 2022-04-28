@@ -1,10 +1,8 @@
-import Header from "./header";
-function Hello() {
+function Hello(props) {
   return (
     <div>
-      <h1>Hello World, welcome to react class</h1>
-      <p> This is a description</p>
-      <Header></Header>
+      <h4>Hello {props.name}, welcome to react class</h4>
+      <p>{props.description} </p>
     </div>
   );
 }

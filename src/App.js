@@ -1,15 +1,16 @@
 import Hello from "./components/hello";
-import Header from "./components/header";
+import HeaderComponent from "./components/header";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <div id="demo" className="demo-class">
-      <h1>
-        This is demo of parent and child where App is a parent and Hello is a
-        child
-      </h1>
-      <Hello></Hello>
-      <Header></Header>
+      <HeaderComponent title="This is a react component header"></HeaderComponent>
+      <Hello
+        name="Monika Abhijeet"
+        description="React is fun and intersting"
+      ></Hello>
+      <Footer email="abc@gmail.com"></Footer>
     </div>
   );
 }

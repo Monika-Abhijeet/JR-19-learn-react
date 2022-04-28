@@ -1,4 +1,5 @@
-function Header() {
-  return <div>This is the header component</div>;
+function HeaderComponent(props) {
+  return <h1>{props.title}</h1>;
 }
-export default Header;
+
+export default HeaderComponent;
