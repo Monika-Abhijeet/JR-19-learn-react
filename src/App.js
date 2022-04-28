@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Hello from "./components/hello";
+import Header from "./components/header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="demo" className="demo-class">
+      <h1>
+        This is demo of parent and child where App is a parent and Hello is a
+        child
+      </h1>
+      <Hello></Hello>
+      <Header></Header>
     </div>
   );
 }
