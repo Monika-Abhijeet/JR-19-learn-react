@@ -1,6 +1,6 @@
 import Hello from "./components/hello";
 import HeaderComponent from "./components/header";
-import Footer from "./components/footer";
+import ClassDemo from "./components/class-demo";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         name="Monika Abhijeet"
         description="React is fun and intersting"
       ></Hello>
-      <Footer email="abc@gmail.com"></Footer>
+      <ClassDemo email="abc@gmail.com"></ClassDemo>
     </div>
   );
 }
