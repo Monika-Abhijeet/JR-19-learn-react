@@ -1,5 +1,15 @@
-import { Button, ButtonGroup, Stack } from "@mui/material";
-import { Delete, Save, Upload } from "@mui/icons-material";
+import {
+  Button,
+  ButtonGroup,
+  FormGroup,
+  Stack,
+  FormControlLabel,
+  Checkbox,
+  Card,
+  CardContent,
+  CardActions,
+} from "@mui/material";
+import { DeleteForever, Save, Upload } from "@mui/icons-material";
 
 function MaterialUI() {
   let alertMsg = () => {
@@ -24,10 +34,30 @@ function MaterialUI() {
         <Button variant="contained" color="success" startIcon={<Upload />}>
           Success
         </Button>
-        <Button variant="contained" color="error" endIcon={<Delete />}>
+        <Button variant="contained" color="error" endIcon={<DeleteForever />}>
           Delete
         </Button>
       </Stack>
+      <ButtonGroup variant="contained" color="success" orientation="vertical">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+      <FormGroup>
+        <FormControlLabel control={<Checkbox />} label="agree" />
+        <FormControlLabel
+          control={<Checkbox defaultChecked />}
+          label="disagree"
+        />
+      </FormGroup>
+      <Card variant="outlined" style={{ width: "400px" }}>
+        <CardContent></CardContent>
+        <h1>Monika Abhihjeet</h1>
+        <h3>email: abc@gamil.com</h3>
+        <CardActions>
+          <Button color="success">Learn more</Button>
+        </CardActions>
+      </Card>
     </div>
   );
 }

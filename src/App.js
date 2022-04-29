@@ -3,20 +3,38 @@ import HeaderComponent from "./components/header";
 import ClassDemo from "./components/class-demo";
 import FunctionDemo from "./components/function-demo";
 import MaterialUI from "./components/material-ui";
+import React from "react";
+import { Class } from "@mui/icons-material";
+import HomeComponent from "./components/home";
+import UseStateTutorial from "./components/hooks/useState";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from "./components/pages/Home";
+import About from "./components/pages/about";
+import Login from "./components/pages/login";
+import Navbar from "./components/navbar/navbar";
 function App() {
-  let onGreet = () => {
-    alert("Hello! Good morning");
-  };
   return (
-    <div id="demo" className="demo-class">
-      <FunctionDemo title="functional Component" greet={onGreet}></FunctionDemo>
-      <MaterialUI></MaterialUI>
-      {/* <ClassDemo
-        email="abc@gmail.com"
-        title="title from the parent"
-      ></ClassDemo> */}
+    <div>
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <div style={{ marginTop: "8vh" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
+    //   <UseStateTutorial></UseStateTutorial>
+    //   <FunctionDemo title="functional Component" greet={onGreet}></FunctionDemo>
+    //   <MaterialUI></MaterialUI>
+    //   <ClassDemo
+    //     email="abc@gmail.com"
+    //     title="title from the parent"
+    //   ></ClassDemo>
+    // </div>
   );
 }
 

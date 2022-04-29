@@ -1,0 +1,26 @@
+.navbar-container {
+  height: 7vh;
+  width: 100%;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  height: 100%;
+}
+
+.pages-list {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  height: 100%;
+
+  list-style-type: none;
+}
