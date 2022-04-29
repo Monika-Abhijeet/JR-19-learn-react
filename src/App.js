@@ -8,11 +8,12 @@ import { Class } from "@mui/icons-material";
 import HomeComponent from "./components/home";
 import UseStateTutorial from "./components/hooks/useState";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Registration from "./pages/registration/registration";
 import Home from "./components/pages/Home";
 import About from "./components/pages/about";
 import Login from "./components/pages/login";
 import Navbar from "./components/navbar/navbar";
+import StudentDetails from "./pages/studentDetails/studentDetails";
 function App() {
   return (
     <div>
@@ -23,6 +24,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/registration" element={<Registration />} />
+            <Route path="/details/:id" element={<StudentDetails />} />
           </Routes>
         </div>
       </BrowserRouter>
