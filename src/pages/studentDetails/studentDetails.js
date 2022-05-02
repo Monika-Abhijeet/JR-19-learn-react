@@ -27,6 +27,7 @@ let users = [
 function StudentDetails() {
   let { id } = useParams();
   // let id = useParams().id;
+  
   let user = users[id];
   console.log(user);
 
