@@ -19,6 +19,7 @@ import SignUp from "./pages/forms/signup";
 import Signin from "./pages/forms/signin";
 import UseContextTutorial from "./pages/hooks/useContext";
 import HttpRequest from "./components/httpRequests/httpRequest";
+import AxiosRequests from "./components/httpRequests/axiosRequests";
 function App() {
   return (
     <div>
@@ -32,6 +33,8 @@ function App() {
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/http" element={<HttpRequest />} />
+            <Route path="/axios" element={<AxiosRequests />} />
+
             <Route path="/useContext" element={<UseContextTutorial />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/details/:id" element={<StudentDetails />} />
