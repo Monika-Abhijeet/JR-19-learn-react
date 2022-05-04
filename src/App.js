@@ -22,6 +22,8 @@ import AxiosRequests from "./components/httpRequests/axiosRequests";
 import UseStateDemo from "./components/hooks/useStateDemo";
 import UseReducerDemo from "./components/hooks/useReducerDemo";
 import UseEffectDemo from "./components/hooks/useEffectDemo";
+import UseRefDemo from "./components/hooks/useRefDemo";
+import UseContextDemo from "./components/hooks/useContext/useContextDemo";
 function App() {
   return (
     <div>
@@ -39,7 +41,8 @@ function App() {
             <Route path="/useState" element={<UseStateDemo />} />
             <Route path="/useReducer" element={<UseReducerDemo />} />
             <Route path="/useEffect" element={<UseEffectDemo />} />
-
+            <Route path="/useRef" element={<UseRefDemo />} />
+            <Route path="/useContext" element={<UseContextDemo />} />
             <Route path="/useContext" element={<UseContextTutorial />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/details/:id" element={<StudentDetails />} />
