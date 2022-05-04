@@ -6,7 +6,6 @@ import MaterialUI from "./components/material-ui";
 import React from "react";
 import { Class } from "@mui/icons-material";
 import HomeComponent from "./components/home";
-import UseStateTutorial from "./components/hooks/useState";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Registration from "./pages/registration/registration";
 import Home from "./components/pages/Home";
@@ -20,6 +19,9 @@ import Signin from "./pages/forms/signin";
 import UseContextTutorial from "./pages/hooks/useContext";
 import HttpRequest from "./components/httpRequests/httpRequest";
 import AxiosRequests from "./components/httpRequests/axiosRequests";
+import UseStateDemo from "./components/hooks/useStateDemo";
+import UseReducerDemo from "./components/hooks/useReducerDemo";
+import UseEffectDemo from "./components/hooks/useEffectDemo";
 function App() {
   return (
     <div>
@@ -34,6 +36,9 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/http" element={<HttpRequest />} />
             <Route path="/axios" element={<AxiosRequests />} />
+            <Route path="/useState" element={<UseStateDemo />} />
+            <Route path="/useReducer" element={<UseReducerDemo />} />
+            <Route path="/useEffect" element={<UseEffectDemo />} />
 
             <Route path="/useContext" element={<UseContextTutorial />} />
             <Route path="/registration" element={<Registration />} />
