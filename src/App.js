@@ -25,6 +25,7 @@ import UseEffectDemo from "./components/hooks/useEffectDemo";
 import UseRefDemo from "./components/hooks/useRefDemo";
 import UseContextDemo from "./components/hooks/useContext/useContextDemo";
 import ParentLifeCycle from "./components/lifecycle/ParentLifecycle";
+import ParentComp from "./components/pureComponentDemo/parentComp";
 function App() {
   return (
     <div>
@@ -48,6 +49,7 @@ function App() {
             <Route path="/registration" element={<Registration />} />
             <Route path="/details/:id" element={<StudentDetails />} />
             <Route path="lifecycle" element={<ParentLifeCycle />} />
+            <Route path="/pureComp" element={<ParentComp />} />
           </Routes>
         </div>
       </BrowserRouter>
