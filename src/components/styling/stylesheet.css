@@ -1,0 +1,12 @@
+.primary {
+  color: red;
+  font-size: 40px;
+}
+
+.danger {
+  color: red;
+}
+
+.success {
+  color: green;
+}

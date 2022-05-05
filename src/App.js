@@ -26,6 +26,9 @@ import UseRefDemo from "./components/hooks/useRefDemo";
 import UseContextDemo from "./components/hooks/useContext/useContextDemo";
 import ParentLifeCycle from "./components/lifecycle/ParentLifecycle";
 import ParentComp from "./components/pureComponentDemo/parentComp";
+import Inline from "./components/styling/inline";
+import ParentStyling from "./components/styling/parentStyle";
+import ParentErrorBoundary from "./components/errorBoundary/parentErrorBoundary";
 function App() {
   return (
     <div>
@@ -50,6 +53,8 @@ function App() {
             <Route path="/details/:id" element={<StudentDetails />} />
             <Route path="lifecycle" element={<ParentLifeCycle />} />
             <Route path="/pureComp" element={<ParentComp />} />
+            <Route path="/styles" element={<ParentStyling />} />
+            <Route path="/errorBoundary" element={<ParentErrorBoundary />} />
           </Routes>
         </div>
       </BrowserRouter>

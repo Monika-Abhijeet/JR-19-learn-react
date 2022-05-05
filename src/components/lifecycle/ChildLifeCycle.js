@@ -21,7 +21,7 @@ class ChildLifecycle extends Component {
   }
   shouldComponentUpdate() {
     console.log("child should component update");
-    return false;
+    return true;
   }
   componentDidUpdate() {
     console.log("Child component did update");
