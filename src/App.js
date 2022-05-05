@@ -29,6 +29,7 @@ import ParentComp from "./components/pureComponentDemo/parentComp";
 import Inline from "./components/styling/inline";
 import ParentStyling from "./components/styling/parentStyle";
 import ParentErrorBoundary from "./components/errorBoundary/parentErrorBoundary";
+import ReduxDemo from "./components/redux/reduxDemo";
 function App() {
   return (
     <div>
@@ -55,6 +56,7 @@ function App() {
             <Route path="/pureComp" element={<ParentComp />} />
             <Route path="/styles" element={<ParentStyling />} />
             <Route path="/errorBoundary" element={<ParentErrorBoundary />} />
+            <Route path="redux" element={<ReduxDemo />} />
           </Routes>
         </div>
       </BrowserRouter>

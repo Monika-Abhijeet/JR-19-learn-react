@@ -12,7 +12,6 @@ function Inline() {
       <h2 style={{ color: "orange" }}>This is a sub heading</h2>
       <h3 style={heading}>heading3</h3>
       <h3 className="error">Error in my inline stylesheet</h3>
-      <h3 className={myStyles.success}>Success here</h3>
     </div>
   );
 }
