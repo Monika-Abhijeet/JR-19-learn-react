@@ -12,7 +12,10 @@ import { Provider } from "react-redux";
 // reducer => how actions transform the state and it modifies store
 // dispatch => dispatch an action to the reducer
 
-const myStore = configureStore({ reducer: allReducers });
+const myStore = configureStore(
+  { reducer: allReducers },
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={myStore}>
