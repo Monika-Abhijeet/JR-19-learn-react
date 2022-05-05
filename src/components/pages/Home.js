@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 let users = [
   {
     id: 0,
@@ -24,6 +25,10 @@ let users = [
 ];
 
 function Home() {
+  const isLogged = useSelector((state) => state.isLogged);
+  if (!isLogged) {
+    return <h1>Please Login to view Home page</h1>;
+  }
   return (
     <div>
       <table className="table bordered">

@@ -30,6 +30,7 @@ import Inline from "./components/styling/inline";
 import ParentStyling from "./components/styling/parentStyle";
 import ParentErrorBoundary from "./components/errorBoundary/parentErrorBoundary";
 import ReduxDemo from "./components/redux/reduxDemo";
+import ParentHOC from "./components/navbar/HOC/ParentHOC";
 function App() {
   return (
     <div>
@@ -57,6 +58,7 @@ function App() {
             <Route path="/styles" element={<ParentStyling />} />
             <Route path="/errorBoundary" element={<ParentErrorBoundary />} />
             <Route path="redux" element={<ReduxDemo />} />
+            <Route path="/hoc" element={<ParentHOC />} />
           </Routes>
         </div>
       </BrowserRouter>
